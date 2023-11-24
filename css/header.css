@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Spline Sans", sans-serif;
+    src: url(../../font/SplineSans-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Spline Sans", sans-serif;
+}
+/* header*/
+.promo-bar {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #272727;
+}
+
+.promo-bar a {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 10px;
+}
+/* navbar */
+.logo img {
+    width: 35%;
+    margin-left: 150px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 30px;
+    font-weight: 300;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+#first {
+    border-bottom: 2px solid #272727;
+    color: #DD0000;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #272727;
+    box-shadow: 0 0 5px #272727;
+    color:#fff;
+}
+#first:hover{
+    color:#fff;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    padding: 17px 20px;
+    background-color: inherit;
+    font-family: "Spline Sans", sans-serif;
+    margin: 0;
+}
+  
+.dropdown-menu a:hover{
+    color: #DD0000;
+    background: none;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+    margin-left: -50px;
+}
+.dropdown-menu li{
+    
+    display: block;
+}
+.dropdown-menu a {
+    float: none;
+    color: #272727;
+    text-decoration: none;
+    display: block;
+    padding-top: 20px;
+    margin-left: -20px;
+    padding-bottom: 20px;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+.dropdown img{
+    width: 200px;
+}
+.icons {
+    margin-left: 100px;
+    color:#272727;
+}
+
+.icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.icons i:hover{
+    color:#DD0000;
+}
+ 
+#search{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+.overlay-content{
+    position: relative;
+    top:46%;
+    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+#search .closebtn{
+    position: absolute;
+    top:20px;
+    right: 45px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+#search .closebtn:hover{
+    color: #f90808;
+}
+#search input[type=text]{
+    padding: 15px;
+    border: none;
+    float: left;
+    width: 90%;
+    background: white;
+}
+#search input[type=text]:hover{
+    background: #e6ffff;
+}
+#search button{
+    float: left;
+    width: 10%;
+    padding: 12px;
+    background: #f90808;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+#search button:hover{
+    color:#fff
+}
+
+@media screen and (max-width: 1272px) {
+    .logo img {
+        margin-left: 30px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .icons {
+        margin-left: 50px;
+    }
+    .icons i {
+        font-size: 16px;
+    }
+    .dropdown-menu {
+        width: auto;
+    }
+}
+@media screen and (max-width:991px) {
+    .dropdown-menu {
+        width: auto;
+    }
+    .nav-link{
+        margin-left: 30px;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        max-height: 350px;
+        width: auto;
+        margin-left: 30px;
+    }
+}
+
+
+#showcart{
+    width: 40%;
+    position: fixed;
+    border-radius: 10px;
+    right: 0;
+    top: 100px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px #ccc solid;
+}
+#showcart button{
+    border: none;
+}
+#showcart .xoaAll{
+    background-color: none;
+    border: 1px solid;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ece4e4;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px #CCC solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}

@@ -1,0 +1,97 @@
+
+.c-item img {
+    /* height: 500px; */
+    width: auto;
+}
+
+
+/*product nổi bật*/
+.product-noibat{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: '';
+    background: #333;
+    display: block;
+    height:3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    margin-left: 0;
+    width: 60px;
+    
+}
+
+.overlay button {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #ca6f04;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-noibat .card:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+    
+}
+
+.product-noibat a {
+    text-decoration: none;
+    color: black;
+}
+.price-compare{
+    color: red;
+}
+.price{
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.star i{
+    color: #DD0000;
+    margin-top: 10px;
+}
+
+.showbanner{
+    margin-bottom: 50px;
+}
+.post{
+    margin-top: 20px;
+}
+.showbanner h5{
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.showbanner h5::after{
+    content: '';
+    background: #333;
+    display: block;
+    height:2px;
+    width: 50px;
+    margin: 10px auto;
+}
+.showbanner p{
+    margin-left: 50px;
+    width: 80%;
+}

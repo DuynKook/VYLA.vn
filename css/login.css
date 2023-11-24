@@ -1,0 +1,82 @@
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding:60px 500px !important;
+    
+}
+
+#id01 input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: none;
+}
+#id01 input[type=password]:focus,input[type=text]:focus {
+    background-color: none;
+    outline: none;
+}
+
+#id01 button, #id02 button {
+    background-color: black!important;
+    color: white !important;
+    padding: 14px 20px !important;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+#id01 button:hover, #id02 button:hover {
+    opacity: 0.8;
+}
+
+#id01 .header-modal, #id02 .header-modal {
+    text-align: center;
+    position: relative;
+}
+
+#id01 .edit-login, #id02 .edit-login{
+    text-align: right;
+    padding: 0px 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#subcri{
+    margin-top: 5px;
+    float: right;
+    cursor: pointer; 
+    color: black;
+    padding: 20px;
+}
+#subcri:hover{
+    color: #DD0000;
+}
+
+#id02 .header-modal{
+    margin-top: -30px;
+}
+
+#id02 input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: none;
+}
+#id02 input[type=password]:focus,input[type=text]:focus {
+    background-color: none;
+    outline: none;
+}

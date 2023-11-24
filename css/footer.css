@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Spline Sans", sans-serif;
+    src: url(../../font/SplineSans-VariableFont_wght.ttf);
+}
+/* footer */
+.footer{
+    font-family: "Spline Sans", sans-serif;
+    background-color: #272727;
+    color:#fff;
+    height: auto;
+}
+.footer h6{
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer p{
+    font-size: 15px;
+    margin-top: -10px;
+    color:#bbb;
+    font-weight: 400;
+    transition: ease-in 0.3s;
+}
+
+.iconConnect a{
+    text-decoration: none;
+    transition: ease-in 0.3s;
+}
+.iconConnect img {
+    height: 40px;
+}
+.footer li{
+    margin-left: -20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color:#bbb;
+    transition: ease-in 0.3s;
+}
+.footer a:hover{
+    color:#DD0000;
+}
+iframe {
+    margin-top: 20px;
+}
+@media screen and (max-width: 1272px) {
+    .iconConnect img{
+        height: 35px;
+    }
+    iframe{
+        width: auto;
+    }
+}

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Spline Sans", sans-serif;
+    src: url(../../font/SplineSans-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Spline Sans", sans-serif;
+}
+
+/* link */
+.product-link{
+    padding: 10px 0px;
+    background-color: #d2ceceed;
+    height: 50px;
+}
+.product-link ul{
+    list-style: none;
+    display: flex;
+}
+.product-link a{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+}
+
+/* product */
+.indexproduct{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.indexproduct .nav-pills .nav-link {
+    background-color: #e54545;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: black;
+}
+.indexproduct .nav-pills .nav-link.active {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.indexproduct .nav-pills .nav-item a:hover{
+    color: #fff;
+}
+
+.product-link ul{
+    list-style: none;
+    display: flex;
+}
+.product-link a{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+}
+/*product*/
+
+.indexproduct h1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 30px;
+}
+
+.tab-content .overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    margin-left: 0;
+    width: 60px;
+    
+}
+
+.tab-content .overlay button {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #ca6f04;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tab-content .card:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+    
+}
+
+.tab-content a {
+    text-decoration: none;
+    color: black;
+}
+.tab-content .price-compare{
+    color: red;
+}
+.price{
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.star i{
+    color: #DD0000;
+    margin-top: 10px;
+}

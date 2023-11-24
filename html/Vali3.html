@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/logo-icon.png" style="height: 54px;">
+    <title>Vali Vivache - VYLA.vn</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.6.2-dist/css/bootstrap.css" />
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css" />
+    <!-- nice select  -->
+    <link rel="stylesheet" href="../css/nice-select.min.css" />
+    <!-- font awesome style -->
+    <link href="../css/font-awesome.all.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+    <!--------------------header-------------------->
+    <div class="header">
+        <div class="promo-bar">
+            <a href="">
+                <span>
+                    <strong>VYLA - NƠI KHỞI ĐẦU HÀNH TRÌNH CỦA BẠN</strong>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!--------------------navbar-------------------->
+    <div class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="logo">
+            <img src="../image/logo.png" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" >TRANG CHỦ</a>
+                </li>
+                <li class="nav-item dropdown  active">
+                    <a class="nav-link dropdown" href="productVali.html" id="first">VALI</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item" href="productVali.html">Vali kéo nhựa</a></li>
+                            <li><a class="dropdown-item" href="productValiVai.html">Vali kéo vải</a></li>
+                            <li><a class="dropdown-item" href="productValiNhom.html">Vali kéo nhôm</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="productBalo.html" >BALO</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item" href="productBalo.html">Balo Laptop</a></li>
+                            <li><a class="dropdown-item" href="productBaloTT.html">Balo thời trang</a></li>
+                            <li><a class="dropdown-item" href="productBaloDL.html">Balo du lịch</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="productTui.html" >TÚI XÁCH</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item" href="productTui.html">Túi xách tay</a></li>
+                            <li><a class="dropdown-item" href="productTuiDC.html">Túi đeo chéo</a></li>
+                            <li><a class="dropdown-item" href="productTuiDL.html">Túi du lịch</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="productPhuKien.html" >PHỤ KIỆN</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item" href="productPhuKien.html">Bao trùm Vali</a></li>
+                            <li><a class="dropdown-item" href="productPKGoi.html">Gối cổ</a></li>
+                            <li><a class="dropdown-item" href="productPKTuiGiay.html">Túi đựng giày </a></li>
+                            <li><a class="dropdown-item" href="productPKTuiMP.html">Túi đựng mỹ phẩm</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="thanhvien.html" >THÀNH VIÊN</a>
+                </li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-search" onclick="openSearch()" id="opensearch"></i>
+                <i id="login" class="fas fa-user"></i>
+                <a onclick="showcart()"> <i class="fas fa-shopping-cart"></i><sup id="countsp">0</sup></a>
+            </div>
+        </div>
+        <div id="search">
+            <span class="closebtn" onclick="closeSearch()" title="Close">x</span>
+            <div class="overlay-content">
+                <form action="">
+                    <input type="text" name="search" placeholder="Search here...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--------------------modal 1------------------->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" role="form">
+            <span data-dismiss="modal" class="edit-login">&times;</span>
+            <div class="header-modal">
+                <h3>ĐĂNG NHẬP</h3>
+            </div>
+            <div class="container">
+                <label for="uname"><b>Tên định danh </b></label>
+                <input id="txtName" type="text" placeholder="Nhập tên định danh" name="uname">
+                <span id="tbName" class="text-danger"></span> <br> <br>
+  
+                <label for="psw"><b>Mật khẩu</b></label>
+                <input id="txtmk" type="password" placeholder="Nhập mật khẩu" name="psw">
+                <span id="tbmk" class="text-danger"></span> <br> <br>
+                
+                <div class="modal-footer" style="border: none; margin-top: -20px;">
+                    <button type="button" id="btn-submit" class="btn btn-success btn-block" >Đăng nhập</button>
+                </div>
+
+                <label>
+                    <input id="check" type="checkbox" checked="checked" name="remember"> Ghi nhớ đăng nhập
+                </label>
+            </div>
+            
+            <div class="container" style="background-color:#f1f1f1">
+                <span id="subcri" data-dismiss="modal">Đăng ký làm thành viên?</span>
+            </div>
+        </form>
+    </div>
+
+    <!--------------------modal 2------------------->
+    <div id="id02" class="modal ">
+        <form class="modal-content animate" role="form">
+            <span data-dismiss="modal" class="edit-login">&times;</span>
+            <div class="header-modal">
+                <h3>ĐĂNG KÝ</h3>
+            </div>
+            <div class="container">
+                <label for=""><b>Tên định danh </b></label>
+                <input id="txtName-1" type="text" placeholder="Nhập vào tên định danh của bạn">
+                <span id="tbName-1" class="text-danger">*</span><br>
+
+                <label for=""><b>Họ và tên </b></label>
+                <input id="txtHoTen" type="text" placeholder="Họ và tên">
+                <span id="tbHoTen" class="text-danger">*</span><br>
+
+                <label for=""><b>Số điện thoại </b></label>
+                <input id="txtSdt" type="text" placeholder="Số điện thoại">
+                <span id="tbSdt" class="text-danger">*</span><br>
+
+                <label for=""><b>Email </b></label>
+                <input id="txtEmail" type="email" placeholder="Email">
+                <span id="tbEmail" class="text-danger">*</span><br>
+
+                <label for=""><b>Mật khẩu </b></label>
+                <input id="txtmk-1" type="password" placeholder="Mật khẩu">
+                <span id="tbmk-1" class="text-danger">*</span><br>
+
+                <div class="modal-footer" style="border: none; margin-top: -20px;">
+                    <button type="button" id="btn-submit-1" class="btn btn-success btn-block" >Đăng nhập</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <!--------------------product------------------->
+    <div class="product">
+        <div class="container">
+            <div class="row productDetail">
+                <div class="col-12 product-item">
+                    <div class="row img"><img src="../image/vali3.jpg" alt=""></div>
+                    <h3>Vali Vivache SPR_2 S Red</h3>
+                    <div class="brand">Thương hiệu: Vivache - Nhật Bản</div>
+                    <div class="product-price1">
+                        <span class="price-compare">1780000&#8363;</span>
+                        <span class="price">1980000&#8363;</span>
+                        <span class="price-compare">-10%</span>
+                    </div>
+                    <span class="sl">Số lượng </span><input type="number" name="soluong" min="1" max="10" value="1">
+                    <div class="product-size">
+                        <p>Size:</p>
+                        <div class="size">
+                            <button style="color: red; border:1px solid red;">S</button>
+                            <button>M</button>
+                            <button >L</button>
+                        </div>  
+                    </div>
+                    <div class="star1">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span> (100)</span>
+                    </div>
+                    <button class="themGH" onclick="themvaogiohang(this)">THÊM VÀO GIỎ HÀNG</button>
+                    <button class="muaNgay" type="button">MUA NGAY</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!--------------------cart----------------------->
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Xóa</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+        </table>
+        <br>
+        <a href="cart.html">Thanh toán</a> 
+        <button onclick="xoatatca()" class="xoaAll">Xóa tất cả</button>
+    </div>
+
+    <!-------------------recomment------------------>
+    <div class="recomment">
+        <div class="container">
+            <div class="chiTiet mb-5">
+                <h3><b>Chi tiết sản phẩm</b></h3>
+                <div class="reco">
+                    <label for="">Thương hiệu:</label>
+                    <div> Vivache</div>
+                </div>
+                <div class="reco">
+                    <label for="">Chất liệu:</label>
+                    <div> Vải Polyester</div>
+                </div>
+                <div class="reco">
+                    <label for="">Trọng lượng:</label>
+                    <div>2.9 Kg</div>
+                </div>
+                <div class="reco">
+                    <label for="">Kích thước (dài x rộng x cao): </label>
+                    <div>34 x 24 x 55 cm</div>
+                </div>
+                <div class="reco">
+                    <label for="">Thể tích: </label>
+                    <div>45 Lít</div>
+                </div>
+                <div class="reco">
+                    <label for="">Dây kéo:</label>
+                    <div>Dây kéo đơn</div>
+                </div>
+                <div class="reco">
+                    <label for="">Bánh xe: </label>
+                    <div>Bánh xe đơn</div>
+                </div>
+                <div class="reco">
+                    <label for="">Khoá: </label>
+                    <div>  TSA </div>
+                </div>
+                <div class="reco">
+                    <label for="">Bảo hành: </label>
+                    <div> Bảo hành trọn đời</div>
+                </div>
+            </div>
+            <div class="moTa">
+                <h3><b>Mô tả sản phẩm</b></h3>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="../image/vali3-1.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>CHẤT LIỆU VẢI CHỐNG THẤM NƯỚC</b></h6>
+                        <p>Chất liệu 100% Polyester nguyên chất không pha tạp chất có khả năng chống 
+                            thấm nước ưu việt, đồng thời cho sản phẩm bền màu với thời gian</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="../image/vali3-2.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>KHÓA TSA AN TOÀN</b></h6>
+                        <p>Tích hợp khóa chìa TSA theo tiêu chuẩn an ninh Hoa Kỳ, ổ khóa được mở bằng 
+                            chìa tăng tính bảo mật và bảo vệ hành lý tối ưu</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="../image/vali3-3.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>THIẾT KẾ QUAI XÁCH CẢI TIẾN</b></h6>
+                        <p>Thiết kế quai xách thông minh phối da êm ái, tiện lợi hơn trong việc xách hành lý 
+                            lên máy bay hoặc những chỗ không tiện kéo vali</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="../image/vali3-4.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>BÁNH XE ĐÔI XOAY 360 ĐỘ LINH HOẠT</b></h6>
+                        <p>Hệ thống 4 trục chính xoay 360 độ của vali giúp hạn chế phát ra tiếng ồn khi 
+                            di chuyển</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="../image/vali3-5.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>CẦN KÉO HỢP KIM NHÔM CAO CẤP</b></h6>
+                        <p>Cần kéo được làm bằng nhôm vững chắc, có nhiều nấc có thể điều chỉnh phù hợp 
+                            với chiều cao của từng người</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="../image/vali3-6.jpg" alt="" class="mt-2 mb-2">
+                        <h6><b>THIẾT KẾ NỘI THẤT THÔNG MINH</b></h6>
+                        <p>Ngăn lớn được cố định bằng dây đai và các khóa gài cố định hành lý, ngoài 
+                            ra được hỗ trợ thêm rất nhiều ngăn nhỏ tiện lợi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-----------------product more----------------->
+    <div class="product-more" style="margin-top: 30px;">
+        <div class="container mt-5">
+            <div class="title">
+                <h2><b>Có thể bạn sẽ thích</b></h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 py-3">
+                    <a href="Balo1.html">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../image/balo1.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="overlay">
+                                <button type="button" class="fas fa-eye" title="Xem Chi Tiết"></button>
+                                <button type="button" class="fas fa-shopping-basket" title="Thêm Vào Giỏ Hàng"></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="">Balo Reeyee RY101B 15.6" M Black</h5>
+                                <div class="product-price">
+                                    <span class="price-compare">1.200.000<sup>&#8363;</sup></span>
+                                    <span class="price">2.000.000<sup>&#8363;</sup></span>
+                                </div>
+                                <div class="star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(357)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 py-3">
+                    <a href="Tui2.html">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../image/tui2.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="overlay">
+                                <button type="button" class="fas fa-eye" title="Xem Chi Tiết"></button>
+                                <button type="button" class="fas fa-shopping-basket" title="Thêm Vào Giỏ Hàng"></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="">Túi Xách Trung Lock & Key</h5>
+                                <div class="product-price">
+                                    <span class="price-compare">882.000<sup>&#8363;</sup></span>
+                                    <span class="price">1.000.000<sup>&#8363;</sup></span>
+                                </div>
+                                <div class="star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span> (1000)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 py-3">
+                    <a href="PhuKien4.html">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../image/pk4.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="overlay">
+                                <button type="button" class="fas fa-eye" title="Xem Chi Tiết"></button>
+                                <button type="button" class="fas fa-shopping-basket" title="Thêm Vào Giỏ Hàng"></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="">Túi Travel Star Mini Bag Orange</h5>
+                                <div class="product-price">
+                                    <span class="price-compare">99.000<sup>&#8363;</sup></span>
+                                    <span class="price">189.000<sup>&#8363;</sup></span>
+                                </div>
+                                <div class="star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span> (1.2K)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 py-3">
+                    <a href="Vali4.html">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../image/vali4.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="overlay">
+                                <button type="button" class="fas fa-eye" title="Xem Chi Tiết"></button>
+                                <button type="button" class="fas fa-shopping-basket" title="Thêm Vào Giỏ Hàng"></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="">Vali Pisani X9 YG1849A_28 L White</h5>
+                                <div class="product-price">
+                                    <span class="price-compare">3.090.000<sup>&#8363;</sup></span>
+                                    <span class="price">5.112.000<sup>&#8363;</sup></span>
+                                </div>
+                                <div class="star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span> (50)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------footer------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 py-3 py-md-0 footer mt-3 mb-2">
+                    <h6>LIÊN HỆ</h6>
+                    <p style="padding-top: 26px">VYLA shop chuyên cung cấp vali kéo giá rẻ chất lượng với rất nhiều mẫu mã khác nhau.</p>
+                    <p style="padding-top: 10px"><i class="fas fa-map-marker-alt"></i>  Đ. Phan Văn Trị, Phường 11, Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p style="padding-top: 10px"><i class="fas fa-phone-alt"></i>  0395 9060 32</p>
+                    <p style="padding-top: 10px"><i class="fas fa-envelope"></i> vyla123@gmail.com</p>
+                    <p> <i class="fab fa-chrome"></i> www.vyla.com</p>
+                    <div class="iconConnect">
+                        <a href="#">
+                            <img src="../image/facebook.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../image/instagram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../image/zalo.png" alt="" >
+                        </a>
+                        <a href="#">
+                            <img src="../image/youtube.png" alt=""> 
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 py-3 py-md-0 footer mt-3">
+                    <h6>CHÍNH SÁCH</h6>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                    </ul>
+                    <img src="../image/bo-cong-thuong-2.png" alt=""  style="height: 40px">
+                    <img src="../image/bo-cong-thuong-2 (1).png" alt=""  style="height: 40px">
+                </div>
+                <div class="col-md-3 py-3 py-md-0 footer mt-3">
+                    <h6>HƯỚNG DẪN</h6>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Hướng dẫn giao nhận</a></li>
+                    </ul>
+                    <h6>CHẤP NHẬN THANH TOÁN</h6>
+                    <img src="../image/mastercard.png" alt="" style="height: 30px">
+                    <img src="../image/visa.png" alt="" style="height: 60px">
+                    <img src="../image/jcb.png" alt="" style="height: 35px">
+                    <img src="../image/paypal.png" alt="" style="width:80px ;height: 30px ">
+                </div>
+                <div class="col-md-3 py-3 py-md-0 footer mt-3">
+                    <h6>BẢN ĐỒ</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7837.7
+                    97953904053!2d106.68357765143928!3d10.819042616341948!2m3!1f0!2f0!3f0!3m2!
+                    1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299a1a5cc7f5%3A0x41c68091f4020821!2zQ-G
+                    7rWEgaMOgbmcgdmFsaS0gYmEgbMO0IC0gdMO6aSB4w6FjaA!5e0!3m2!1svi!2s!4v169885186
+                    0465!5m2!1svi!2s" width="auto" height="260px" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--File JS-->
+    <!-- jQery -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <!-- popper js -->
+    <script src="../js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../css/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="../js/owl.carousel.min.js">
+    </script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/fontawesome.js"></script>
+    <!-- custom js -->
+    <script src="../js/giohang.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>
